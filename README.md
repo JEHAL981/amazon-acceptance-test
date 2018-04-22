@@ -31,4 +31,4 @@ To install the test suite locally, including the above npm dependencies:
 
 To run the tests locally against the test portal environment:
 
-1. Run `npm run test:local`
+1. Run `npm run test`
