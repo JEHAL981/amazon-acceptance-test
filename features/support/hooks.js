@@ -3,14 +3,14 @@ const {defineSupportCode} = require('cucumber')
 const puppeteer = require('puppeteer')
 
 defineSupportCode(({Before, After}) => {
-    Before(async function () {
+    Before(async  () => {
         const browser = this.browser = await puppeteer.launch({
-            headless: false
+            headless: true
         })
         this.page = await browser.newPage();
     })
 
-    After(async function () {
+    After(async () => {
         await this.browser.close();
     })
 })
